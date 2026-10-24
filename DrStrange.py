@@ -9,7 +9,7 @@ circle = cv2.imread(r"magic_circle.png", cv2.IMREAD_UNCHANGED)
 if circle.shape[2] == 3:
     circle = cv2.cvtColor(circle, cv2.COLOR_BGR2BGRA)
 
-# Thiết lập nhận diện bàn tay
+# Thiết lập nhận diện tay
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands()
 
